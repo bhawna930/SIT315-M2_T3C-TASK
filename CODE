@@ -13,12 +13,14 @@ void setup() {
   pinMode(pirLedPin, OUTPUT);
   pinMode(pirLedPin2, OUTPUT);
 
-  //  interrupts for PIR sensors
+  // Attach interrupts for PIR sensors
   attachInterrupt(digitalPinToInterrupt(pirSensorPin1), pirMotionDetected1, RISING);
   attachInterrupt(digitalPinToInterrupt(pirSensorPin2), pirMotionDetected2, RISING);
 }
 
 void loop() {
+  
+}
 
 void pirMotionDetected1() {
   motionFlag1 = 1;
