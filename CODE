@@ -6,6 +6,8 @@ const int pirLedPin2 = 12;            // Digital output pin for PIR sensor 2 LED
 volatile int motionFlag1 = 0;
 volatile int motionFlag2 = 0;
 
+
+
 void setup() {
   Serial.begin(9600);
   pinMode(pirSensorPin1, INPUT);
